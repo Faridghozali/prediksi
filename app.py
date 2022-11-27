@@ -3,8 +3,6 @@ import pandas as pd
 import numpy as np
 import pickle
 
-
-
 st.write("""
 # Loan Prediction App
 This app predicts the **Palmer Penguin** species!
@@ -45,7 +43,7 @@ df = pd.concat([input_df,penguins],axis=0)
 
 # Encoding of ordinal features
 # https://www.kaggle.com/pratik1120/penguin-dataset-eda-classification-and-clustering
-encode = ['sex','island']
+encode = ['sex','Marital Status']
 for col in encode:
     dummy = pd.get_dummies(df[col], prefix=col)
     df = pd.concat([df,dummy], axis=1)
@@ -62,7 +60,7 @@ else:
     st.write(df)
 
 # Reads in saved classification model
-load_clf = pickle.load(open('penguins_clf.pkl', 'rb'))
+load_clf = pickle.load(open('classifier.pkl', 'rb'))
 
 # Apply model to make predictions
 prediction = load_clf.predict(df)
