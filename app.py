@@ -22,7 +22,7 @@ if uploaded_file is not None:
 else:
     def user_input_features():
         sex = st.sidebar.selectbox('Sex',('male','female'))
-        marital Status= st.sidebar.selectbox('Marital Status',('Unmaried','maried'))
+        marital status= st.sidebar.selectbox('Marital Status',('Unmaried','maried'))
         applicants monthly income = st.sidebar.slider('Bill length (mm)', 32.1,59.6,43.9)
         total loan amount = st.sidebar.slider('Bill depth (mm)', 13.1,21.5,17.2)
         credit_History = st.sidebar.slider('Flipper length (mm)', 172.0,231.0,201.0)
