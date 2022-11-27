@@ -12,7 +12,7 @@ Data obtained from the [loan prediction](https://github.com/Faridghozali/prediks
 st.sidebar.header('User Input Features')
 
 st.sidebar.markdown("""
-[Example CSV input file](https://raw.githubusercontent.com/dataprofessor/data/master/penguins_example.csv)
+[Example CSV input file](https://raw.githubusercontent.com/Faridghozali/prediksi/main/data.csv)
 """)
 
 # Collects user input features into dataframe
